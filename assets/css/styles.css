@@ -1,0 +1,252 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 12px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #2A6F97;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #e1eff7, #ffffff);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #2A6F97;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #2A6F97;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background: #1f536f;
+}
+
+/* About */
+.about {
+    padding: 80px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 60px; 
+}
+
+/* 3. About Image */
+.about-img img {
+    width: 95%; 
+    height: auto; 
+    border-radius: 12px; 
+    object-fit: cover; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+}
+
+/* 4. About Text Content */
+.about-text h2 {
+    font-size: 2em; 
+    color: #2A6F97; 
+    margin-bottom: 25px; 
+    font-weight: 700; 
+    padding-left: 10px;
+    line-height: 1.2;
+}
+
+.about-text p {
+    font-size: 1.1em; 
+    line-height: 1.5; 
+    color: #444; 
+    margin-bottom: 25px; 
+    text-align: justify; 
+}
+
+/* Book Service */
+.book-service {
+    background: #f7f9fb;
+    padding: 70px 0;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.service-area ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+/* Trusted */
+.trusted {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Services */
+.services {
+    padding: 80px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    text-align: center;
+}
+
+/* Why */
+.why {
+    background: #f7f9fb;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.why ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+/* Pricelist */
+.pricelist {
+    padding: 80px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #2A6F97;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2A6F97;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+
+    .about-grid,
+    .book-grid,
+    .service-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        background: #fff;
+    }
+}
