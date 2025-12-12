@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Service Solutions</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
@@ -13,6 +14,7 @@
             <a href="#home" class="logo">
                 <img src="assets/img/logo.png" alt="HomeService Logo">
             </a>
+
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#home" class="active">Home</a></li>
@@ -23,6 +25,13 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
         </div>
     </header>
 
@@ -39,7 +48,7 @@
     <section id="about" class="about">
         <div class="container about-grid">
             <div class="about-img">
-                <img src="assets/img/about.png" alt="About Us">
+                <img src="assets/img/about.png" alt="Tim teknisi sedang memperbaiki pipa">
             </div>
             <div class="about-text">
                 <h2>About Us</h2>   
@@ -82,6 +91,25 @@
         <div class="container">
             <h2>Trusted Partner</h2>
             <p>Trusted by many families and homeowners across Jabodetabek.</p>
+        
+            <div class="logo-carousel">
+                <div class="logo-item">
+                    <img src="assets/img/electrolux.png" alt="Logo Partner Electrolux">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/gree.png" alt="Logo Partner Gree">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/lg.png" alt="Logo Partner LG">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/philips.png" alt="Logo Partner Philips">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/samsung.png" alt="Logo Partner Samsung">
+                </div>
+            </div>
+        
         </div>
     </section>
 
@@ -91,14 +119,23 @@
             <h2>Our Services</h2>
             <div class="service-grid">
                 <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-broom"></i> 
+                    </div> 
                     <h3>Cleaning Services</h3>
                     <p>Keep your house fresh and clean with our professional team.</p>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> 
+                    </div>
                     <h3>Home Maintenance</h3>
                     <p>Skilled technicians for reliable home system repair and care.</p>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shirt"></i> 
+                    </div> 
                     <h3>Laundry Services</h3>
                     <p>Fast and clean laundry to support your daily activities.</p>
                 </div>
@@ -110,12 +147,35 @@
     <section id="why" class="why">
         <div class="container">
             <h2>Why Choose Us</h2>
-            <ul>
-                <li>Fast Response</li>
-                <li>Professional & Trusted</li>
-                <li>Affordable Pricing</li>
-                <li>Guaranteed Satisfaction</li>
-            </ul>
+            <p class="subtitle">Kami menjamin layanan yang cepat, profesional, dan memberikan ketenangan pikiran bagi rumah Anda.</p>
+            
+            <div class="why-grid">
+                
+                <div class="why-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Fast Response (Respon Cepat)</h3>
+                    <p>Tim kami siap siaga untuk merespon panggilan darurat Anda dalam waktu kurang dari 60 menit, memastikan masalah segera tertangani.</p>
+                </div>
+                
+                <div class="why-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Professional & Trusted (Terpercaya)</h3>
+                    <p>Semua teknisi kami bersertifikasi, berpengalaman, dan telah melewati proses seleksi ketat untuk menjamin keamanan dan kualitas kerja terbaik.</p>
+                </div>
+                
+                <div class="why-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>Affordable Pricing (Harga Terjangkau)</h3>
+                    <p>Kami menawarkan harga yang transparan tanpa biaya tersembunyi. Kualitas premium dengan biaya yang ramah di kantong.</p>
+                </div>
+                
+                <div class="why-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Guaranteed Satisfaction (Jaminan Kepuasan)</h3>
+                    <p>Jika Anda tidak puas dengan hasil pekerjaan kami, kami akan memperbaikinya tanpa biaya tambahan. Kepuasan Anda adalah janji kami.</p>
+                </div>
+            </div>
+            
         </div>
     </section>
 
@@ -123,28 +183,60 @@
     <section id="pricelist" class="pricelist">
         <div class="container">
             <h2>Pricelist</h2>
+            
             <table>
                 <thead>
                     <tr>
-                        <th>Service</th>
-                        <th>Starting Price</th>
+                        <th>Layanan Inti</th>
+                        <th>Deskripsi Singkat</th>
+                        <th>Tarif Mulai Dari</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr class="category-header">
+                        <td colspan="3">Cleaning Services (Pembersihan Profesional)</td>
+                    </tr>
                     <tr>
-                        <td>Cleaning Service</td>
+                        <td>Pembersihan Rumah Harian</td>
+                        <td>Pembersihan rutin 2 jam oleh tim terlatih, fokus pada area umum.</td>
                         <td>Rp 100.000</td>
                     </tr>
                     <tr>
-                        <td>Home Maintenance</td>
-                        <td>Rp 150.000</td>
+                        <td>Deep Cleaning (Per Jam)</td>
+                        <td>Pembersihan mendalam untuk area spesifik seperti dapur atau kamar mandi.</td>
+                        <td>Rp 50.000 / jam</td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="3">Home Maintenance (Perbaikan & Perawatan)</td>
                     </tr>
                     <tr>
-                        <td>Laundry Service</td>
-                        <td>Rp 8.000/kg</td>
+                        <td>Perbaikan Kelistrikan Dasar</td>
+                        <td>Jasa perbaikan lampu, saklar, dan stop kontak sederhana.</td>
+                        <td>Rp 150.000 + Material</td>
+                    </tr>
+                    <tr>
+                        <td>Perbaikan Pipa Tersumbat</td>
+                        <td>Jasa perbaikan saluran air, wastafel, atau toilet tersumbat.</td>
+                        <td>Rp 200.000 (Jasa)</td>
+                    </tr>
+                    
+                    <tr class="category-header">
+                        <td colspan="3">Laundry Services (Cuci & Setrika)</td>
+                    </tr>
+                    <tr>
+                        <td>Cuci & Setrika Reguler</td>
+                        <td>Pencucian, pengeringan, dan setrika standar, selesai 3-4 hari.</td>
+                        <td>Rp 8.000 / kg</td>
+                    </tr>
+                    <tr>
+                        <td>Cuci Kilat (Express)</td>
+                        <td>Layanan selesai dalam 1 hari (24 jam).</td>
+                        <td>Rp 12.000 / kg</td>
                     </tr>
                 </tbody>
             </table>
+            
         </div>
     </section>
 
@@ -153,11 +245,24 @@
         <div class="container contact-grid">
             <div class="contact-box">
                 <h2>Contact Information</h2>
-                <p>Phone: +62 812-3456-7890</p>
-                <p>Email: support@homeservice.co.id</p>
-                <p>Office: Jakarta, Indonesia</p>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+62 812-3456-7890</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>support@homeservice.co.id</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Jakarta, Indonesia</p>
+                </div>
             </div>
-            <div class="contact-box">
+            
+            <div class="contact-box office-hours">
                 <h2>Office Hours</h2>
                 <p>Mon - Fri: 08:00 - 17:00</p>
                 <p>Saturday: 09:00 - 14:00</p>
@@ -168,7 +273,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 HomeService. All rights reserved.</p>
+        <p>© 2025 HomeService. Sistem Informasi - Universitas Siber Asia.<br><br>
+            Concept by : Maulana Ikhsan | Nuris Iswahyudi | Nur Muhammad Abdurrosyid | Putri Chahya Zahrani | Rafli Risyad Noorsy
+        </p>
     </footer>
 
     <script src="assets/js/main.js"></script>
