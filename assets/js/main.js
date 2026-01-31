@@ -1,4 +1,3 @@
-// Active link highlighting saat scroll
 const sections = document.querySelectorAll("section");
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
@@ -14,7 +13,6 @@ if (menuToggle) {
 // 2. Fungsionalitas Tutup Menu saat Link Diklik (untuk mobile)
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        // Cek apakah menu sedang terbuka di mobile
         if (navMenu.classList.contains("open")) {
             navMenu.classList.remove("open");
         }
