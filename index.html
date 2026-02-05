@@ -81,46 +81,67 @@
 
     <!-- Book Home Service -->
     <section class="book-service">
-        <div class="container book-grid">
+        <div class="container">
 
-            <!-- LEFT SIDE -->
-            <div class="left-content">
-            
+            <!-- Service Area -->
             <div class="service-area">
                 <h2>Service Area</h2>
                 <ul>
-                <li>Jakarta</li>
-                <li>Bogor</li>
-                <li>Depok</li>
-                <li>Tangerang</li>
-                <li>Bekasi</li>
+                    <li>Jakarta</li>
+                    <li>Bogor</li>
+                    <li>Depok</li>
+                    <li>Tangerang</li>
+                    <li>Bekasi</li>
                 </ul>
             </div>
 
-            <div class="book-form">
-                <h2>Book Home Service</h2>
-                <p>Contact us to schedule your service today!</p>
-                <a href="#contact" class="btn-primary">Book Now</a>
-            </div>
+            <div class="book-grid">
+
+                <!-- FORM -->
+                <div class="book-form">
+                    <h2>Book Home Service</h2>
+                    <p>Isi formulir di bawah ini untuk memesan layanan.</p>
+
+                    <form action="#" method="POST">
+
+                        <input type="text" name="nama" placeholder="Nama Lengkap" required>
+
+                        <select name="layanan" required>
+                            <option value="">Pilih Layanan</option>
+                            <option value="cleaning">Cleaning Services</option>
+                            <option value="maintenance">Home Maintenance</option>
+                            <option value="laundry">Laundry Services</option>
+                        </select>
+
+                        <input type="tel" name="whatsapp" placeholder="Nomor WhatsApp" required>
+
+                        <!-- INPUT BARU -->
+                        <textarea name="alamat" rows="4" placeholder="Alamat Lengkap" required></textarea>
+
+                        <button type="submit">Kirim Pesanan</button>
+
+                    </form>
+                </div>
+
+                <!-- VIDEO -->
+                <div class="video-box">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/BwWKR-cPR1M"
+                            title="YouTube video player"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-caption">
+                        Lihat bagaimana tim kami bekerja dengan standar profesional langsung di rumah Anda.
+                    </div>
+                </div>
 
             </div>
-
-            <!-- RIGHT SIDE (VIDEO) -->
-            <div class="video-wrapper">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/BwWKR-cPR1M?si=zF6FoxUPezO3RoBZ" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-
         </div>
     </section>
+
 
     <!-- Trusted Partner -->
     <section class="trusted">
